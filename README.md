@@ -1,46 +1,42 @@
-# Getting Started with Create React App
+## 👋  Summary
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The goal is to create a "Merchants" screen for an admin portal. The purpose of this screen is to allow admins to view and manipulate a list of merchants. An admin should be able to:
 
-## Available Scripts
+1. View the list of merchants
+2. Navigate the list of merchants (pagination)
+3. Select page size (pagination, 20-50-100)
+4. Search the list of merchants
+5. Have access to merchant actions (open, view stores, delete)
 
-In the project directory, you can run:
+### 🛠️  Tech stack
 
-### `yarn start`
+- TypeScript
+- React
+- Emotion.js
+- Redux-Toolkit
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### ⚠️  Limitations
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+1. No libraries for tables, pagination, or search should be used.
 
-### `yarn test`
+### 🔑  API
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Endpoint: `https://api.staging.quickcheckoutpage.com/v1/merchants`
 
-### `yarn build`
+Options: `limit, offset, search`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Headers:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```tsx
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE2MjQwMjEwNzcsImlhdCI6MTYyMTQyOTA3NywiaXNzIjoicWMtYXBpIiwibmJmIjoxNjIxNDI5MDc3LCJ1c2VySWQiOiIyMDg2MjZlZS03ZTY5LTQ4NmMtYTAwNC00YWRjNGY0YWUwNWEiLCJ1c2VyUm9sZSI6IiJ9.6d4IEASfBS17Z-rZdIf25PlUxsJ01N5-rHnPtrx2CBU
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 💅  Design
 
-### `yarn eject`
+[https://www.figma.com/embed?embed_host=notion&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FOc4m6pzGodAgWGA3dhxAXC%2FTest-Task-Merchants-List%3Fnode-id%3D173%253A122](https://www.figma.com/embed?embed_host=notion&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FOc4m6pzGodAgWGA3dhxAXC%2FTest-Task-Merchants-List%3Fnode-id%3D173%253A122)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+[Test Task - Merchants List](https://www.figma.com/file/Oc4m6pzGodAgWGA3dhxAXC/Test-Task-Merchants-List?node-id=173%3A122)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### ⭐  Bonus points
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Deploy the application to Firebase Hosting and send us a link along with the code 😎
