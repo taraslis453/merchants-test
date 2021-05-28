@@ -14,6 +14,7 @@ export const styles = {
     align-items: center;
     text-transform: uppercase;
     font-family: "Montserrat-SemiBold";
+    color: rgba(21, 31, 38, 0.85);
     h5 {
       margin-left: 10px;
     }

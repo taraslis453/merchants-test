@@ -102,10 +102,12 @@ export const styles = {
     .th {
       font-family: "Montserrat-SemiBold";
       padding: 16px 24px;
+      color: rgba(21, 31, 38, 0.85);
     }
     .td {
       font-family: "Montserrat-Medium";
       background: #fbfbfb;
+      color: rgba(21, 31, 38, 0.75);
       padding: 22px 24px;
     }
   `,
